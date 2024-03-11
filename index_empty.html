@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filter Divs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="filters">
+  <div class="filter-container">
+    <label>Filter by Color: </label>
+    <select id="color-filter">
+      <option value="all">All</option>
+      <option value="red">Red</option>
+      <option value="blue">Blue</option>
+      <option value="green">Green</option>
+    </select>
+  </div>
+
+
+  <div class="filter-container">
+    <label>Filter by Size:</label>
+    <input type="radio" name="size" value="small"> Small
+    <input type="radio" name="size" value="medium"> Medium
+    <input type="radio" name="size" value="large"> Large
+    <input type="radio" name="size" value="all" checked> All
+  </div>
+
+ 
+
+  <div class="filter-container">
+
+    <label>Filter by Type:</label>
+    <input type="checkbox" id="type1" value="type1"> Type 1
+    <input type="checkbox" id="type2" value="type2"> Type 2
+    <input type="checkbox" id="type3" value="type3"> Type 3
+
+  </div>
+
+  <div class="filter-container">
+
+    <label>Filter by Price:</label>
+    <button class="price-btn" data-price="low">Low</button>
+    <button class="price-btn" data-price="medium">Medium</button>
+    <button class="price-btn" data-price="high">High</button>
+    <button class="price-btn" data-price="all">All</button>
+  </div> 
+</div>
+
+<div id="items">
+  <div class="item" data-color="red" data-size="small" data-type="type1" data-price="low">
+    <ul>
+      <li>Red</li>
+      <li>Small</li>
+      <li>Type 1</li>
+      <li>Low Price</li>
+    </ul>
+  </div>
+  <div class="item" data-color="blue" data-size="medium" data-type="type2" data-price="medium">
+    <ul>
+      <li>Blue</li>
+      <li>Medium</li>
+      <li>Type 2</li>
+      <li>Medium Price</li>
+    </ul>   
+  </div>
+  <div class="item" data-color="green" data-size="large" data-type="type3" data-price="high">
+    <ul>
+      <li>Green</li>
+      <li>Large</li>
+      <li>Type 3</li>
+      <li>High Price</li>
+    </ul>
+  </div>
+</div>
+
+<script src="script_empty.js"></script>
+</body>
+</html>
